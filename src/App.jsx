@@ -1,6 +1,4 @@
-import { Outlet } from "react-router-dom";
 import "./App.css";
-import Header from "./Components/Header";
 
 function App() {
   const handleUsr = (e) => {
@@ -32,7 +30,6 @@ function App() {
   return (
     <>
       <h2>Simple Crud</h2>
-      <Header />
       <form onSubmit={handleUsr}>
         <input type="text" name="name" id="" />
         <br />
@@ -40,7 +37,6 @@ function App() {
         <br />
         <input type="submit" value="Add User" />
       </form>
-      <Outlet />
     </>
   );
 }
